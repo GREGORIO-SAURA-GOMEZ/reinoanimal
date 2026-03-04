@@ -1,6 +1,15 @@
-package paqAnimales;
+package es.cifpcarlosiii.ed1damdist.tarea4;
 
 public class Perro extends Mamifero {
+
+    public Perro(String nombre) {
+        super(nombre);
+    }
+
+    @Override
+    void relacionar(Animal p) {
+        System.out.println("Con el perro: " + p.getNombre());
+    }
 
     @Override
     void dormir() {
@@ -13,15 +22,6 @@ public class Perro extends Mamifero {
 
     void gruñir() {
         System.out.println("Es un sonido ronco y sostenido");
-    }
-
-    @Override
-    void relacionar(Animal p) {
-        System.out.println("Con el perro: " + p.nombre);
-    }
-
-    String ToString() {
-        return this.nombre;
     }
 
 }
